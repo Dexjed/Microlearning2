@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Measures of Central Tendency Equations</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f0f4f8;
+        }
+        h1, h2 {
+            color: #2c3e50;
+        }
+        .concept {
+            background-color: #ffffff;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .formula {
+            background-color: #e8f4fd;
+            border: 1px solid #b3d4fc;
+            border-radius: 6px;
+            padding: 10px 15px;
+            margin: 10px 0;
+            text-align: center;
+            font-style: italic;
+        }
+        .example {
+            background-color: #e8f4fd;
+            border: 1px solid #b3d4fc;
+            border-radius: 6px;
+            padding: 10px 15px;
+            margin: 10px 0;
+        }
+        .note {
+            background-color: #fff4e6;
+            border: 1px solid #ffd8a8;
+            border-radius: 6px;
+            padding: 10px 15px;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Measures of Central Tendency Equations</h1>
+
+    <div class="concept">
+        <p>In statistics, measures of central tendency help us understand the typical or central value in a dataset. The three main measures are mean, median, and mode. Each provides different insights into your data.</p>
+    </div>
+
+    <div class="concept">
+        <h2>1. Mean</h2>
+        <p>The mean is the average of all numbers in a dataset. It's calculated by summing all values and dividing by the count of values.</p>
+        
+        <div class="formula">
+            Mean = (Sum of all values) / (Number of values)
+        </div>
+
+        <p>In mathematical notation, this is often written as:</p>
+
+        <div class="formula">
+            x̄ = (Σx) / n
+        </div>
+
+        <p>Where:</p>
+        <ul>
+            <li>x̄ (pronounced "x-bar") is the mean</li>
+            <li>Σ (sigma) means "sum of"</li>
+            <li>x represents each value in the dataset</li>
+            <li>n is the number of values</li>
+        </ul>
+
+        <div class="example">
+            <h3>Example:</h3>
+            <p>Dataset: 2, 4, 4, 4, 5, 5, 7, 9</p>
+            <p>Mean = (2 + 4 + 4 + 4 + 5 + 5 + 7 + 9) / 8 = 40 / 8 = 5</p>
+        </div>
+
+        <div class="note">
+            <strong>Note:</strong> The mean is sensitive to extreme values (outliers) and may not always represent the "typical" value well in skewed distributions.
+        </div>
+    </div>
+
+    <div class="concept">
+        <h2>2. Median</h2>
+        <p>The median is the middle value when a dataset is ordered from least to greatest. For an odd number of values, it's the center value. For an even number, it's the average of the two central values.</p>
+
+        <div class="formula">
+            Median = Middle value (odd n) or Average of two middle values (even n)
+        </div>
+
+        <p>For an odd number of values:</p>
+        <div class="formula">
+            Median = x[(n + 1) / 2]
+        </div>
+
+        <p>For an even number of values:</p>
+        <div class="formula">
+            Median = (x[n/2] + x[(n/2) + 1]) / 2
+        </div>
+
+        <p>Where:</p>
+        <ul>
+            <li>x[i] represents the ith value in the ordered dataset</li>
+            <li>n is the number of values</li>
+        </ul>
+
+        <div class="example">
+            <h3>Examples:</h3>
+            <p>Odd number of values: 2, 3, 4, <strong>5</strong>, 6, 8, 9</p>
+            <p>Median = 5</p>
+            <p>Even number of values: 1, 3, <strong>5, 6</strong>, 7, 8</p>
+            <p>Median = (5 + 6) / 2 = 5.5</p>
+        </div>
+
+        <div class="note">
+            <strong>Note:</strong> The median is less affected by outliers and is often used for skewed data or when extreme values are present.
+        </div>
+    </div>
+
+    <div class="concept">
+        <h2>3. Mode</h2>
+        <p>The mode is the value that appears most frequently in a dataset. A dataset can have one mode, more than one mode (multimodal), or no mode.</p>
+
+        <div class="formula">
+            Mode = Value(s) with highest frequency
+        </div>
+
+        <p>There's no specific equation for calculating the mode, but it can be found by:</p>
+        <ol>
+            <li>Counting the frequency of each unique value in the dataset</li>
+            <li>Identifying the value(s) with the highest frequency</li>
+        </ol>
+
+        <div class="example">
+            <h3>Examples:</h3>
+            <p>One mode: 1, 2, 3, <strong>3</strong>, 4, 5 (Mode = 3)</p>
+            <p>Two modes: 1, <strong>2</strong>, <strong>2</strong>, 3, 4, <strong>4</strong>, 5 (Modes = 2 and 4)</p>
+            <p>No mode: 1, 2, 3, 4, 5 (each number appears once)</p>
+        </div>
+
+        <div class="note">
+            <strong>Note:</strong> The mode is the only measure of central tendency that can be used with nominal (categorical) data.
+        </div>
+    </div>
+
+    <div class="concept">
+        <h2>4. Weighted Mean</h2>
+        <p>The weighted mean is used when some values in a dataset are more important than others. Each value is multiplied by its weight before summing.</p>
+
+        <div class="formula">
+            Weighted Mean = (Sum of weighted values) / (Sum of weights)
+        </div>
+
+        <p>In mathematical notation:</p>
+        <div class="formula">
+            x̄w = (Σwx) / (Σw)
+        </div>
+
+        <p>Where:</p>
+        <ul>
+            <li>x̄w is the weighted mean</li>
+            <li>w represents the weight for each value</li>
+            <li>x represents each value in the dataset</li>
+        </ul>
+
+        <div class="example">
+            <h3>Example:</h3>
+            <p>Values: 2, 4, 6 with weights 1, 2, 3 respectively</p>
+            <p>Weighted Mean = (2*1 + 4*2 + 6*3) / (1 + 2 + 3) = 26 / 6 = 4.33</p>
+        </div>
+    </div>
+
+    <div class="concept">
+        <h2>5. Geometric Mean</h2>
+        <p>The geometric mean is used for data that is multiplicative in nature, like growth rates or returns.</p>
+
+        <div class="formula">
+            Geometric Mean = (x1 * x2 * ... * xn)^(1/n)
+        </div>
+
+        <p>In mathematical notation:</p>
+        <div class="formula">
+            GM = (Πx)^(1/n)
+        </div>
+
+        <p>Where:</p>
+        <ul>
+            <li>Π (pi) means "product of"</li>
+            <li>x represents each value in the dataset</li>
+            <li>n is the number of values</li>
+        </ul>
+
+        <div class="example">
+            <h3>Example:</h3>
+            <p>Growth rates: 1.05, 1.03, 1.06</p>
+            <p>Geometric Mean = (1.05 * 1.03 * 1.06)^(1/3) ≈ 1.0465</p>
+        </div>
+    </div>
+
+    <div class="note">
+        <strong>Choosing the Right Measure:</strong>
+        <ul>
+            <li>Use the mean for symmetric distributions without significant outliers.</li>
+            <li>Use the median for skewed distributions or when outliers are present.</li>
+            <li>Use the mode for categorical data or to find the most common value.</li>
+            <li>Use the weighted mean when values have different levels of importance.</li>
+            <li>Use the geometric mean for data involving growth rates or percentages.</li>
+        </ul>
+    </div>
+</body>
+</html>

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mean, Median, and Mode | Statistics Microlearning</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f0f4f8;
+        }
+        h1, h2, h3 {
+            color: #2c3e50;
+        }
+        .concept {
+            background-color: #ffffff;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .example, .note {
+            background-color: #e8f4fd;
+            border: 1px solid #b3d4fc;
+            border-radius: 6px;
+            padding: 10px 15px;
+            margin: 10px 0;
+            font-size: 0.9em;
+        }
+        .note {
+            background-color: #fff4e6;
+            border-color: #ffd8a8;
+        }
+        code {
+            background-color: #f1f3f5;
+            padding: 2px 4px;
+            border-radius: 4px;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        .formula {
+            background-color: #e9ecef;
+            padding: 10px;
+            border-radius: 6px;
+            text-align: center;
+            font-style: italic;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 15px;
+        }
+        th, td {
+            border: 1px solid #dee2e6;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #e9ecef;
+        }
+    </style>
+</head>
+<body>
+    <h1>Measures of Central Tendency: Mean, Median, and Mode</h1>
+
+    <div class="concept">
+        <h2>Introduction</h2>
+        <p>In statistics, measures of central tendency help us understand the typical or central value in a dataset. The three main measures are mean, median, and mode. Each provides different insights into your data.</p>
+    </div>
+
+    <div class="concept">
+        <h2>1. Mean</h2>
+        <p>The mean is the average of all numbers in a dataset. It's calculated by summing all values and dividing by the count of values.</p>
+        
+        <div class="formula">
+            Mean = (Sum of all values) / (Number of values)
+        </div>
+
+        <div class="example">
+            <h3>Example:</h3>
+            <p>Dataset: 2, 4, 4, 4, 5, 5, 7, 9</p>
+            <p>Mean = (2 + 4 + 4 + 4 + 5 + 5 + 7 + 9) / 8 = 40 / 8 = 5</p>
+        </div>
+
+        <div class="note">
+            <strong>Note:</strong> The mean is sensitive to extreme values (outliers) and may not always represent the "typical" value well in skewed distributions.
+        </div>
+    </div>
+
+    <div class="concept">
+        <h2>2. Median</h2>
+        <p>The median is the middle value when a dataset is ordered from least to greatest. For an odd number of values, it's the center value. For an even number, it's the average of the two central values.</p>
+
+        <div class="example">
+            <h3>Examples:</h3>
+            <p>Odd number of values: 2, 3, 4, <strong>5</strong>, 6, 8, 9</p>
+            <p>Median = 5</p>
+            <p>Even number of values: 1, 3, 5, 6, 7, 8</p>
+            <p>Median = (5 + 6) / 2 = 5.5</p>
+        </div>
+
+        <div class="note">
+            <strong>Note:</strong> The median is less affected by outliers and is often used for skewed data or when extreme values are present.
+        </div>
+    </div>
+
+    <div class="concept">
+        <h2>3. Mode</h2>
+        <p>The mode is the value that appears most frequently in a dataset. A dataset can have one mode, more than one mode (multimodal), or no mode.</p>
+
+        <div class="example">
+            <h3>Examples:</h3>
+            <p>One mode: 1, 2, 3, 3, 4, 5 (Mode = 3)</p>
+            <p>Two modes: 1, 2, 2, 3, 4, 4, 5 (Modes = 2 and 4)</p>
+            <p>No mode: 1, 2, 3, 4, 5 (each number appears once)</p>
+        </div>
+
+        <div class="note">
+            <strong>Note:</strong> The mode is the only measure of central tendency that can be used with nominal (categorical) data.
+        </div>
+    </div>
+
+    <div class="concept">
+        <h2>Comparing Mean, Median, and Mode</h2>
+        <table>
+            <tr>
+                <th>Measure</th>
+                <th>Best Used When</th>
+                <th>Advantages</th>
+                <th>Disadvantages</th>
+            </tr>
+            <tr>
+                <td>Mean</td>
+                <td>Data is symmetric and without significant outliers</td>
+                <td>Uses all data points; good for further statistical analysis</td>
+                <td>Sensitive to outliers</td>
+            </tr>
+            <tr>
+                <td>Median</td>
+                <td>Data is skewed or has outliers</td>
+                <td>Not affected by extreme values</td>
+                <td>Ignores the precise value of most data points</td>
+            </tr>
+            <tr>
+                <td>Mode</td>
+                <td>Looking for the most common value; can be used with categorical data</td>
+                <td>Works with all types of data</td>
+                <td>May not exist or may not be unique</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="concept">
+        <h2>Practical Applications</h2>
+        <ul>
+            <li><strong>Mean:</strong> Calculating average scores, temperatures, or prices</li>
+            <li><strong>Median:</strong> Reporting typical incomes or house prices (less affected by extremely high values)</li>
+            <li><strong>Mode:</strong> Finding the most common blood type or the most frequently selected option in a survey</li>
+        </ul>
+    </div>
+
+    <div class="concept">
+        <h2>Choosing the Right Measure</h2>
+        <p>The choice between mean, median, and mode depends on your data type and distribution:</p>
+        <ul>
+            <li>For symmetric distributions without outliers, all three measures may be similar.</li>
+            <li>For skewed data or data with outliers, the median is often more representative.</li>
+            <li>For categorical data, only the mode is applicable.</li>
+        </ul>
+        <div class="note">
+            <strong>Tip:</strong> It's often helpful to calculate and report multiple measures of central tendency to get a more complete picture of your data.
+        </div>
+    </div>
+</body>
+</html>
